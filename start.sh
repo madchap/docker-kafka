@@ -2,8 +2,8 @@
 
 # If a ZooKeeper container is linked with the alias `zookeeper`, use it.
 # You MUST set ZOOKEEPER_IP in env otherwise.
-[ -n "$ZOOKEEPER_PORT_2181_TCP_ADDR" ] && ZOOKEEPER_IP=$ZOOKEEPER_PORT_2181_TCP_ADDR
-[ -n "$ZOOKEEPER_PORT_2181_TCP_PORT" ] && ZOOKEEPER_PORT=$ZOOKEEPER_PORT_2181_TCP_PORT
+[ -n "$ZK_SVC_SERVICE_HOST" ] && ZOOKEEPER_IP=$ZK_SVC_SERVICE_HOST
+[ -n "$ZK_SVC_SERVICE_PORT" ] && ZOOKEEPER_PORT=$ZK_SVC_SERVICE_PORT
 
 IP=$(grep "\s${HOSTNAME}$" /etc/hosts | head -n 1 | awk '{print $1}')
 
