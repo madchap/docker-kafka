@@ -1,6 +1,8 @@
 Apache Kafka on Docker
 ======================
 
+Modified to use Kafka broker id auto-generation.
+
 This repository holds a build definition and supporting files for building a
 [Docker] image to run [Kafka] in containers. It is published as an Automated
 Build [on the Docker registry], as `ches/kafka`.
